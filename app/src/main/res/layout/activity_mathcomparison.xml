@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MathComparison">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mathcomparison"
+        tools:context=".MathComparison"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-338dp">
+
+        <TextView
+            android:id="@+id/questionTextView"
+            android:layout_width="332dp"
+            android:layout_height="175dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="29dp"
+            android:gravity="center_horizontal"
+            android:text="Comparison between number 1 and number 2 , is number 1 greater or smaller ?"
+            android:textColor="@color/black"
+            android:textSize="14pt" />
+
+        <TextView
+            android:id="@+id/numbersTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="273dp"
+            android:layout_marginEnd="139dp"
+            android:text="Numbers"
+            android:textColor="@color/black"
+            android:textSize="12pt" />
+
+        <Button
+            android:id="@+id/smallerButton"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/numbersTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="9dp"
+            android:onClick="onSmallerButtonClick"
+            android:text="Smaller"
+            android:textSize="12pt" />
+
+        <Button
+            android:id="@+id/biggerButton"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/numbersTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="32dp"
+            android:onClick="onBiggerButtonClick"
+            android:text="Greater"
+            android:textSize="12pt" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
